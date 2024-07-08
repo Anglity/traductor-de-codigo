@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor de Código Profesional</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS para estilos -->
+</head>
+<body>
+    <!-- Encabezado de la aplicación -->
+    <header class="app-header">
+        <h1 class="app-title">Traductor de Código: JavaScript a PHP y PHP a C#</h1>
+    </header>
+    
+    <!-- Contenedor de botones para las acciones -->
+    <div class="tool-container">
+        <button class="button" onclick="abrir()">Abrir</button> <!-- Botón para abrir un archivo -->
+        <button class="button" onclick="guardar()">Guardar</button> <!-- Botón para guardar el archivo traducido -->
+        <button class="button" onclick="nuevo()">Nuevo</button> <!-- Botón para crear un nuevo documento -->
+        <button class="button" onclick="limpiar()">Limpiar</button> <!-- Botón para limpiar el textarea de entrada -->
+        <button class="button" onclick="salir()">Salir</button> <!-- Botón para salir de la aplicación -->
+    </div>
+    
+    <!-- Contenedor principal de la aplicación -->
+    <main class="main-container">
+        <!-- Área de texto para el código fuente -->
+        <textarea id="sourceCode" class="code-input" placeholder="Escriba o pegue el código aquí..."></textarea>
+        <!-- Área de texto para el código traducido, solo lectura -->
+        <textarea id="translatedCode" class="code-output" readonly placeholder="El código traducido aparecerá aquí..."></textarea>
+        <!-- Botón para iniciar la traducción del código -->
+        <button class="button translate-button" onclick="translateCode()">Traducir</button>
+    </main>
+    
+    <!-- Enlace al archivo JavaScript que contiene la lógica de la aplicación -->
+    <script src="script.js"></script>
+</body>
+</html>
